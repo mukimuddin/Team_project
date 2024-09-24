@@ -1,0 +1,146 @@
+/* Font Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jacquarda+Bastarda+9&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Font Styles */
+
+/* Common Css */
+
+*{
+       margin: 0;
+       padding: 0;
+       outline: 0;
+       box-sizing: border-box;
+}
+a{
+       text-decoration: none;
+       display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+       margin: 0;
+       padding: 0;
+}
+body {
+       background: linear-gradient(to right, #000, #362727, #633e3e, #7e3f3f, #923a3a, #b02222, #e60a0a);
+   }   
+.container{
+       width: 1320px;
+       margin: 0 auto;
+}
+ul,ol{
+       list-style: none;
+}
+:root{
+       --brand-color: #ff0000;
+       --primary-color: #df4242;
+       --poppins: "Poppins", sans-serif;
+       --logo-style: "Bebas Neue", sans-serif;
+}
+
+/* Common Css */
+
+/* Navbar Part */
+  
+#navbar{
+       margin-top: 30px;
+       margin-bottom: 10px;
+       
+}
+.navbar{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;     
+}
+.navbarButtons ul{
+       display: flex;
+       gap: 30px;
+}
+.navbarLogo a{
+       color: var(--brand-color);
+       font-size: 40px;
+       font-family: var(--logo-style);
+       font-weight: 400;
+       transition: filter 0.3s ease, transform 0.3s ease;
+       display: inline-block;
+       background: transparent;
+}
+.navbarLogo a:hover{
+       filter: drop-shadow(0 0 10px var(--brand-color));
+       transform: scale(1.05);
+}
+.navbarButtons ul li a{
+       color: #fff;
+       font-weight: 400;
+       font-size: 20px;
+       font-family: var(--poppins);
+       transition: all linear .2s;
+}
+.navbarButtons ul li a:hover{
+       color: var(--primary-color);
+}
+
+/* Navbar Part */
+
+/* Identy Part */
+
+#dv_identy{
+       margin-top: 150px;
+       margin-bottom: 150px;
+}
+.dv_photo_name{
+       display: flex;
+       justify-content: space-between;
+}
+.first_photo img{
+       height: 500px;
+       transition: filter 0.3s ease;
+}
+.first_photo img:hover {
+       filter: drop-shadow(0 0 15px red);
+}
+.secend_photo img{
+       height: 500px;
+       transition: filter 0.3s ease;
+}
+.secend_photo img:hover {
+       filter: drop-shadow(0 0 15px red);
+}
+.first_name{
+       height: auto;
+       width: 377px;
+}
+.first_name h1{
+       margin-top: 20px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 52px;
+       font-family: var(--poppins);
+       font-weight: 600;
+       color: transparent;
+       transition: filter 0.3s ease;
+       transition: all linear .3s;
+}
+.first_photo_name:hover h1{
+       color: white;
+       filter: drop-shadow(0 0 15px red);
+}
+.secend_name{
+       height: auto;
+       width: 430px;
+}
+.secend_name h1{
+       margin-top: 20px;
+       margin-left: 160px;
+       font-size: 52px;
+       font-family: var(--poppins);
+       font-weight: 600;
+       color: transparent;
+       transition: filter 0.3s ease;
+       transition: all linear .3s;
+}
+.secend_photo_name:hover h1{
+       color: white;
+       filter: drop-shadow(0 0 15px red);
+}
+/* Identy Part */
