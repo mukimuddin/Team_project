@@ -82,6 +82,8 @@ ul,ol{
 
 /* Navbar Part */
 
+/*----- Home Part -----*/
+
 /* Click alart part */
 
 #click_alart{
@@ -98,6 +100,10 @@ ul,ol{
     font-family: var(--logo-style);
     font-weight: 400;
     color: #fff;
+    transition: filter 0.3s ease;
+}
+.click_alart h3:hover{
+    filter: drop-shadow(0 0 15px white);
 }
 
 /* Click alart part */
@@ -221,6 +227,8 @@ ul,ol{
    
 /* Identy Part */
 
+/*----- Home Part -----*/
+
 /* Arrow Part */
 
 #arrow{
@@ -241,16 +249,180 @@ ul,ol{
     width: 50px;
     color: var(--brand-color);
     transition: filter 0.3s ease;
-    transition: all linear .1s;
     background: #fff;
     border: 1px solid var(--brand-color);
     font-size: 30px;
     border-radius: 50%;
-
 }
 .arrow_icon:hover{
-    filter: drop-shadow(0 0 15px red);
+    filter: drop-shadow(0 0 15px var(--brand-color));
 
 }
 
 /* Arrow Part */
+
+/*----- Contact Part -----*/
+
+/* Contact Alart part */
+
+#contact_alart{
+    margin-top: 100px;
+    margin-bottom: 30px;  
+}
+.contact_alart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_alart h3{
+    font-size: 30px;
+    font-family: var(--logo-style);
+    font-weight: 400;
+    color: #fff;
+    transition: filter 0.3s ease;
+}
+.contact_alart h3:hover{
+    filter: drop-shadow(0 0 15px white);
+}
+
+/* Contact Alart part */
+
+/* Mukim Contact Details */
+
+.m_con_detail{
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(to left, #000, #362727, #633e3e, #7e3f3f, #923a3a, #b02222, #e60a0a);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.m_contact_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.m_contact_name h1{
+    font-size: 50px;
+    color: var(--primary-color);
+    font-family: var(--poppins);
+    font-weight: 600;
+    transition: filter 0.3s ease;
+}
+.m_contact_name h1:hover{
+    filter: drop-shadow(0 0 15px var(--brand-color));
+}
+.m_con_detail .email .email_code img{
+    height: 400px;
+}
+.m_con_detail .whatsapp .whatsapp_code img{
+    height: 400px;
+}
+.m_con_detail .email .email_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.m_con_detail .whatsapp .whatsapp_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.m_con_detail .email .email_name h1{
+    font-size: 40px;
+    font-family: var(--poppins);
+    color: #fff;
+    transition: filter 0.7s ease;
+    font-weight: 400;
+}
+.m_con_detail .email .email_name h1:hover{
+    filter: drop-shadow(0 0 15px white);
+}
+.m_con_detail .whatsapp .whatsapp_name h1{
+    font-size: 40px;
+    font-family: var(--poppins);
+    color: #fff;
+    transition: filter 0.7s ease;
+    font-weight: 400;
+}
+.m_con_detail .whatsapp .whatsapp_name h1:hover{
+    filter: drop-shadow(0 0 15px white);
+}
+
+/* Mukim Contact Details */
+
+/* Rakib Contact Details */
+
+.r_con_detail{
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(to left, #000, #362727, #633e3e, #7e3f3f, #923a3a, #b02222, #e60a0a);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.r_contact_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.r_contact_name h1{
+    font-size: 50px;
+    color: var(--primary-color);
+    font-family: var(--poppins);
+    font-weight: 600;
+    transition: filter 0.3s ease;
+}
+.r_contact_name h1:hover{
+    filter: drop-shadow(0 0 15px var(--brand-color));
+}
+.r_con_detail .email .email_code img{
+    height: 400px;
+}
+.r_con_detail .whatsapp .whatsapp_code img{
+    height: 400px;
+}
+.r_con_detail .email .email_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.r_con_detail .whatsapp .whatsapp_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.r_con_detail .email .email_name h1{
+    font-size: 40px;
+    font-family: var(--poppins);
+    color: #fff;
+    transition: filter 0.7s ease;
+    font-weight: 400;
+}
+.r_con_detail .email .email_name h1:hover{
+    filter: drop-shadow(0 0 15px white);
+}
+.r_con_detail .whatsapp .whatsapp_name h1{
+    font-size: 40px;
+    font-family: var(--poppins);
+    color: #fff;
+    transition: filter 0.7s ease;
+    font-weight: 400;
+}
+.r_con_detail .whatsapp .whatsapp_name h1:hover{
+    filter: drop-shadow(0 0 15px white);
+}
+
+/* Rakib Contact Details */
+
+/*----- Contact Part -----*/
