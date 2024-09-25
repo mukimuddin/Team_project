@@ -22,7 +22,8 @@ h1,h2,h3,h4,h5,h6,p,ul,ol{
 }
 body {
        background: linear-gradient(to right, #000, #362727, #633e3e, #7e3f3f, #923a3a, #b02222, #e60a0a);
-   }   
+       scroll-behavior: smooth;
+}   
 .container{
        width: 1320px;
        margin: 0 auto;
@@ -43,7 +44,7 @@ ul,ol{
   
 #navbar{
        margin-top: 30px;
-       margin-bottom: 10px;
+       margin-bottom: 30px;
        
 }
 .navbar{
@@ -81,35 +82,63 @@ ul,ol{
 
 /* Navbar Part */
 
+/* Click alart part */
+
+#click_alart{
+    margin-top: 100px;
+    margin-bottom: 30px;  
+}
+.click_alart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.click_alart h3{
+    font-size: 30px;
+    font-family: var(--logo-style);
+    font-weight: 400;
+    color: #fff;
+}
+
+/* Click alart part */
+
 /* Identy Part */
 
-#dv_identy{
+#dv_identy {
        margin-top: 150px;
        margin-bottom: 150px;
-}
-.dv_photo_name{
+   }
+   
+   .dv_photo_name {
        display: flex;
        justify-content: space-between;
-}
-.first_photo img{
+       margin-bottom: 100px;
+   }
+   
+   .first_photo img {
        height: 500px;
        transition: filter 0.3s ease;
-}
-.first_photo img:hover {
+   }
+   
+   .first_photo img:hover {
        filter: drop-shadow(0 0 15px red);
-}
-.secend_photo img{
+   }
+   
+   .secend_photo img {
        height: 500px;
        transition: filter 0.3s ease;
-}
-.secend_photo img:hover {
+   }
+   
+   .secend_photo img:hover {
        filter: drop-shadow(0 0 15px red);
-}
-.first_name{
+   }
+   
+   .first_name {
        height: auto;
        width: 377px;
-}
-.first_name h1{
+   }
+   
+   .first_name h1 {
        margin-top: 20px;
        display: flex;
        justify-content: center;
@@ -119,17 +148,20 @@ ul,ol{
        font-weight: 600;
        color: transparent;
        transition: filter 0.3s ease;
-       transition: all linear .3s;
-}
-.first_photo_name:hover h1{
+       transition: all linear 0.3s;
+   }
+   
+   .first_photo_name:hover h1 {
        color: white;
        filter: drop-shadow(0 0 15px red);
-}
-.secend_name{
+   }
+   
+   .secend_name {
        height: auto;
        width: 430px;
-}
-.secend_name h1{
+   }
+   
+   .secend_name h1 {
        margin-top: 20px;
        margin-left: 160px;
        font-size: 52px;
@@ -137,10 +169,87 @@ ul,ol{
        font-weight: 600;
        color: transparent;
        transition: filter 0.3s ease;
-       transition: all linear .3s;
-}
-.secend_photo_name:hover h1{
+       transition: all linear 0.3s;
+   }
+   
+   .secend_photo_name:hover h1 {
        color: white;
        filter: drop-shadow(0 0 15px red);
+   }
+   
+   .dv_documantory {
+       position: relative;
+       height: 300px; /* Height for the area */
+       overflow-y: scroll; /* Enable scrolling */
+       scroll-behavior: smooth; /* Smooth scrolling */
+       transition: opacity 0.5s ease;
+   }
+   
+   /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+   .dv_documantory::-webkit-scrollbar {
+       display: none;
+   }
+   
+   /* Hide scrollbar for Firefox */
+   .dv_documantory {
+    position: relative;
+    width: 100%; /* Full width */
+    overflow: hidden; /* Prevent overflow */
+    height: 0; /* Initially no height, so no blank space */
+    opacity: 0; /* Initially invisible */
+    transition: height 0.5s ease, opacity 0.5s ease; /* Smooth transition */
 }
+
+/* When a documentary is active, expand the container */
+.dv_documantory.show {
+    height: 300px; /* Adjust the height as needed */
+    opacity: 1; /* Fade in */
+}
+
+.first_documentory,
+.secend_documentory {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Hidden initially */
+    visibility: hidden; /* Hidden initially */
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Show the documentaries with fade-in effect */
+.first_documentory.show,
+.secend_documentory.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dv_documantory::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+.dv_documantory {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Style for the document titles */
+.first_doc_title, .secend_doc_title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: var(--logo-style);
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.first_doc_pera, .secend_doc_pera {
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--poppins);
+    font-weight: 400;
+    color: #fff;
+}
+
+   
+    
 /* Identy Part */
