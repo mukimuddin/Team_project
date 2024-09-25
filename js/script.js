@@ -25,8 +25,3 @@ document.addEventListener('DOMContentLoaded', function() {
     mukimPhoto.addEventListener('click', showMukimDocumentary);
     rakibPhoto.addEventListener('click', showRakibDocumentary);
 });
-
-
-
-
-
